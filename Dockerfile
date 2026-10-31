@@ -10,7 +10,7 @@ ENV NODE_ENV=production PORT=3000 \
     YTDLP_PATH=/opt/ytdlp/bin/yt-dlp \
     FFMPEG_PATH=/usr/bin/ffmpeg FFPROBE_PATH=/usr/bin/ffprobe
 WORKDIR /app
-COPY --chown=node:node package.json server.mjs game.mjs audio.mjs ./
+COPY --chown=node:node package.json server.mjs game.mjs audio.mjs audio-errors.mjs ./
 COPY --chown=node:node public ./public
 RUN mkdir -p /app/data && chown node:node /app/data
 USER node
