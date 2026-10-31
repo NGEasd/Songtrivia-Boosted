@@ -1,0 +1,27 @@
+# Local secrets (keep the configuration template)
+.env
+.env.*
+!.env.example
+
+# Runtime audio and leaderboard data
+/data/
+
+# Dependencies and locally installed audio tools
+node_modules/
+/tools/
+
+# Logs, test output and caches
+*.log
+coverage/
+.nyc_output/
+.cache/
+*.tsbuildinfo
+
+# Local editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
